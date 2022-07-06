@@ -3,13 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vueuse/core": "^8.8.0",
+    "amfe-flexible": "^2.2.1",
     "axios": "^0.27.2",
     "core-js": "^3.6.5",
+    "dayjs": "^1.11.3",
+    "echarts": "^5.3.3",
+    "vant": "^2.12.48",
     "vue": "^2.7.0",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
@@ -27,10 +32,17 @@
     "@vue/eslint-config-typescript": "^7.0.0",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-vue": "^9.1.1",
+    "eslint-plugin-vue": "9.1.1",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "postcss-pxtorem": "5.0.0",
     "prettier": "^2.2.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
-    "typescript": "~4.1.5"
+    "typescript": "~4.1.5",
+    "unplugin-auto-import": "^0.9.1",
+    "unplugin-vue-components": "0.19.3",
+    "vconsole": "^3.14.6",
+    "vconsole-webpack-plugin": "^1.7.3"
   }
 }

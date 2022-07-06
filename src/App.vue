@@ -1,11 +1,7 @@
+<script setup lang="ts"></script>
+
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <router-view></router-view>
 </template>
 
 <style lang="scss">
@@ -13,20 +9,22 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  height: 100vh;
+  // background-color: #f6f7f9;
+  background-image: linear-gradient(#ffffff, #e8e8e8);
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+.sc-mian {
+  height: 100%;
+  position: relative;
+  .sc-view {
+    height: calc(100% - 1.33334rem);
+    width: 100%;
+    overflow-y: auto;
+  }
+  .sc-sub-view {
+    padding-top: 1.22667rem;
+    height: 100%;
+    overflow-y: auto;
   }
 }
 </style>

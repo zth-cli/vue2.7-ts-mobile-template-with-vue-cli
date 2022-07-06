@@ -1,0 +1,65 @@
+/* border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*  重置标签默认margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* 重置ul ol样式 */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* html及后代元素获取焦点 */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/*重置body标签的默认样式 */
+body {
+  height: 100vh;
+  text-rendering: optimizeSpeed;
+  /* line-height: 1.5; */
+}
+
+/* 指定下划线和上划线穿过字符或字形时的呈现方式 */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* 默认设置图片的样式 */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
