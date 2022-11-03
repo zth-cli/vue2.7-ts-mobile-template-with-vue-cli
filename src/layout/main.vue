@@ -14,10 +14,10 @@
   </div>
 </template>
 <script setup lang="ts">
-import { ref, watch, getCurrentInstance } from 'vue'
-import { Route } from 'vue-router'
+import { ref, watch } from 'vue'
+import { useRoute } from '@/hooks'
 
-const route = getCurrentInstance()?.proxy.$route as Route
+const { route } = useRoute()
 const active = ref(route.path)
 
 watch(
